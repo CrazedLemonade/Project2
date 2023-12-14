@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #333; /* Dark gray background color */
+    margin: 0; /* Added to eliminate any default margin */
+    padding: 0; /* Added to eliminate any default padding */
+  }
+  .carousel {
+      background-color: none; /* Set the background color to transparent */
+    }
+.thumbnail {
+    border: 0cm;
+    border-radius: -25;
+
+}
+/* Hide carousel controls */
+.carousel-control.left,
+.carousel-control.right {
+  opacity: 0;
+  filter: alpha(opacity=0); /* For IE8 and earlier */
+  background: none;
+  border: none;
+}
+
+/* Show controls on hover */
+.carousel:hover .carousel-control.left,
+.carousel:hover .carousel-control.right {
+  opacity: 1;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.thumbnail img {
+    border-radius: 25%;
+    width : 500px;
+    height: 400px;
+}
+    /* Make the logo bigger */
+    .navbar-brand img {
+    padding: 0;
+    margin: 0%;
+    margin-bottom: 0;
+      width: 40px; /* Adjust the width as needed */
+      height: 40px; /* Adjust the height as needed */
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #ffffff;
+      padding: 20px;
+    }
+    
+    .carousel-inner img {
+      width: 100%;
+      margin: auto;
+      min-height: 200px;
+
+    }
+
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="../Project2Images/New Project.png" alt="Logo"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="index.html">Home</a></li>
+        <li class="active"><a href="About.html">About</a></li>
+        <li><a href="Shop.html">Store</a></li>
+        <li><a href="Cart.html">Cart</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+\      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+    <h2>Our Mission</h2> <br>
+    <h3>To deliver a world renown cheese tasting expience at an affordable cost</h3>
+    <br>
+    <h4>What we have created</h4>
+    <div class="row text-center slideanim">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="../Project2Images/Winsconson.jpg" alt="Winsconson" width="container-fluid" height="container-fluid">
+          <p><strong>Winsconson</strong></p>
+          <p>BRIEZY DAYS was founded in 1983 in Winsconson by Founder Goudan Curd and Swiss Co-Founder Adam Edam</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="../Project2Images/CHEESEWORKERS.jpg" alt="Workers" width="400" height="300">
+          <p><strong>Production</strong></p>
+          <p>We produce all our cheese product here in wisconson in out 80 acre Farm/factory</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="../Project2Images/chill.jpg" alt="Couple" width="400" height="300">
+          <p><strong>Quality and Assurance</strong></p>
+          <p>We pride ourselves on the Quality of our goods. All cheese are made in small batches and sample from 
+            expert cheesemongers in the industry to ensure a high-end tasty expience delivered straight to your day in 7 days or 
+            less.
+          </p>
+        </div>
+      </div>
+    </div><br>
+    
+    <h2>What our customers say</h2>
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <h4>"My wife married me after I gave her a 30lbs ball of Mozzarella!"<br><span>Cheester Mild</span></h4>
+        </div>
+        <div class="item">
+          <h4>"I loved the manchago more than my own son"<br><span> Cheddar Barkly JR</span></h4>
+        </div>
+        <div class="item">
+          <h4>"THE CHEESE IS SO GOOD"<br><span>Alaxander Brie</span></h4>
+        </div>
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</body>
+<footer class="container-fluid text-center">
+</footer>
+<hr>
+<div class="row">
+        <div class="col-lg-6 col-md-12 mb-4">
+          <h5 class="mb-3" style="letter-spacing: 2px; color: black;"></h5>
+          <p style="color: black;">
+            <h3 style="color: black;">  
+               <a href="Shop.html" style="color: black;">CHEESE</a> <br>
+               <a href="Shop.html" style="color: black;">MEATS</a> <br>
+               <a href="Shop.html" style="color: black;">BEST SELLERS</a> 
+
+                
+            </h3>    
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-3" style="letter-spacing: 2px; color:black ;">Contact Us</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-1">
+              <a href="contactMe.html" style="color: black;">Speak To A Representive</a>
+            </li>
+            <li>
+                <p style="color: black;">Go to our sister site <a href="#">Crackers.com</a> 
+            </li>
+          </ul>
+        </div>
+
+        <style>
+            .availibility {
+                color: black;
+            }
+        </style>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-1" style="letter-spacing: 2px; color: #FFB703;">Come Visit</h5>
+          <table class="table" style="color: #4f4f4f; border-color: #666;">
+            <tbody>
+              <tr>
+                <td class="availibility">Mon - Fri:</td>
+                <td class="availibility">10am - 3pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3" style="background-color: #219EBC(0, 0, 0, 0.2);">
+      <p style="color: #FFB703;">© 2023 Copyright</p>
+    </div>
+</footer>
+</body>
+</html>

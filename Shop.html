@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Add your custom styles here */
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #333; /* Dark gray background color */
+      margin: 0; /* Added to eliminate any default margin */
+      padding: 0; /* Added to eliminate any default padding */
+    }
+
+    /* Make the logo bigger */
+    .navbar-brand img {
+      padding: 0;
+      margin: 0%;
+      margin-bottom: 0;
+      width: 40px; /* Adjust the width as needed */
+      height: 40px; /* Adjust the height as needed */
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Product card styles */
+    .product-card {
+      margin-bottom: 20px;
+    }
+
+    .product-image {
+      max-height: 200px;
+      object-fit: cover;
+    }
+
+    .product-details {
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="../Project2Images/New Project.png" alt="Logo"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li class="active"><a href="Shop.html">Store</a></li>
+        <li><a href="Cart.html">Cart</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center bg-grey">
+  <h2>Shop</h2>
+  <div class="row">
+    <!-- Product 1 -->
+    <div class="col-sm-4">
+      <div class="product-card">
+        <img src="../Project2Images/swiss.jpg" alt="Product 1" style="width: 100%;" class="img-responsive product-image">
+        <div class="product-details">
+          <h4>Adam Swiss</h4>
+          <p>Creamy Rich and nutty. This swiss is made by Co-Founder Adam Edam. Made from sheeps and wagyu beef milk</p>
+          <p>$15.99 5 oz</p>
+          <button class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-sm-4">
+      <div class="product-card">
+        <img src="../Project2Images/manchago.jpg" alt="Product 2" style="width: 100%;" class="img-responsive product-image">
+        <div class="product-details">
+          <h4>Manchago</h4>
+          <p>12 month old Manchago Cheese cultivated here on premise. Blended with Goat and sheep milk for refined nutty and sharp taste that leaves people wanting more </p>
+          <p>$8.99 5 oz</p>
+          <button class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-sm-4">
+      <div class="product-card">
+        <img src="../Project2Images/prosciutto.jpg" alt="Product 3" style="width: 100%;" class="img-responsive product-image">
+        <div class="product-details">
+          <h4>Prosciuto</h4>
+          <p>Aged for 18 months. Each sliced delicatly by hand to achieve a paper like cut. 
+            Salty and savory with a wonderfully sweet fat cap sure to make anyone salivate after thier first bite
+          </p>
+          <p>$32.99 lbs</p>
+          <button class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+
+</footer>
+<hr>
+<div class="row">
+        <div class="col-lg-6 col-md-12 mb-4">
+          <h5 class="mb-3" style="letter-spacing: 2px; color: black;"></h5>
+          <p style="color: black;">
+            <h3 style="color: black;">  
+               <a href="Shop.html" style="color: black;">CHEESE</a> <br>
+               <a href="Shop.html" style="color: black;">MEATS</a> <br>
+               <a href="Shop.html" style="color: black;">BEST SELLERS</a> 
+
+                
+            </h3>    
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-3" style="letter-spacing: 2px; color:black ;">Contact Us</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-1">
+              <a href="contactMe.html" style="color: black;">Speak To A Representive</a>
+            </li>
+            <li>
+                <p style="color: black;">Go to our sister site <a href="#">Crackers.com</a> 
+            </li>
+          </ul>
+        </div>
+
+        <style>
+            .availibility {
+                color: black;
+            }
+        </style>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-1" style="letter-spacing: 2px; color: #FFB703;">Come Visit</h5>
+          <table class="table" style="color: #4f4f4f; border-color: #666;">
+            <tbody>
+              <tr>
+                <td class="availibility">Mon - Fri:</td>
+                <td class="availibility">10am - 3pm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3" style="background-color: #219EBC(0, 0, 0, 0.2);">
+      <p style="color: #FFB703;">© 2023 Copyright</p>
+    </div>
+</footer>
+</body>
+</html>
+

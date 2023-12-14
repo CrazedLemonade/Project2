@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shopping Cart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #333; /* Dark gray background color */
+      margin: 0; /* Added to eliminate any default margin */
+      padding: 0; /* Added to eliminate any default padding */
+    }
+
+    .thumbnail img {
+      border-radius: 25%;
+      width : 500px;
+      height: 400px;
+    }
+
+    /* Make the logo bigger */
+    .navbar-brand img {
+      padding: 0;
+      margin: 0%;
+      margin-bottom: 0;
+      width: 40px; /* Adjust the width as needed */
+      height: 40px; /* Adjust the height as needed */
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #ffffff;
+      padding: 20px;
+    }
+    
+    .carousel-inner img {
+      width: 100%;
+      margin: auto;
+      min-height: 200px;
+    }
+
+    @media (max-width: 600px) {
+      .carousel-caption {
+        display: none; 
+      }
+    }
+
+    /* Style for the shopping cart items */
+    .cart-item {
+      border: 1px solid #ddd;
+      margin: 10px 0;
+      padding: 50px;
+    }
+
+    /* Style for the total price and checkout button */
+    .total-price {
+      font-size: 1.5em;
+      margin-top: 10px;
+    }
+
+    .checkout-btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="../Project2Images/New Project.png" alt="Logo"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="index.html">Home</a></li>
+        <li ><a href="About.html">About</a></li>
+        <li><a href="Shop.html">Store</a></li>
+        <li class="active"><a href="Cart.html">Cart</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Container (Shopping Cart Section) -->
+<div id="shopping-cart" class="container-fluid text-center bg-grey">
+  <div class="row">
+    <!-- Display items on the left side -->
+    <div class="col-md-8">
+      <h2>Shopping Cart</h2>
+
+      <div class="cart-item">
+        <img src="../Project2Images/goat.jpg" alt="Item 1" width="50%" height="50%">
+        <p><strong>Floral Goat</strong></p>
+        <p>Price: $10</p>
+        <p>Quantity: 2</p>
+      </div>
+
+      <div class="cart-item">
+        <img src="../Project2Images/Brie_11.jpg" alt="Item 2" width="50%" height="50%">
+        <p><strong>Brie</strong></p>
+        <p>Price: $15.99</p>
+        <p>Quantity: 1</p>
+      </div>
+    </div>
+
+    <!-- Display total price and checkout button on the right side -->
+    <div class="col-md-4">
+      <div class="total-price">
+        <p><strong>Total Price: $35.99 + tax</strong></p>
+      </div>
+
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="container-fluid text-center">
+  <hr>
+  <div class="row">
+    <div class="col-lg-6 col-md-12 mb-4">
+      <h5 class="mb-3" style="letter-spacing: 2px; color: black;"></h5>
+      <p style="color: black;">
+        <h3 style="color: black;">  
+          <a href="Shop.html" style="color: black;">CHEESE</a> <br>
+          <a href="Shop.html" style="color: black;">MEATS</a> <br>
+          <a href="Shop.html" style="color: black;">BEST SELLERS</a>
+        </h3>    
+      </p>
+    </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+      <h5 class="mb-3" style="letter-spacing: 2px; color:black ;">Contact Us</h5>
+      <ul class="list-unstyled mb-0">
+        <li class="mb-1">
+          <a href="contactMe.html" style="color: black;">Speak To A Representative</a>
+        </li>
+        <li>
+          <p style="color: black;">Go to our sister site <a href="#">Crackers.com</a></p>
+        </li>
+      </ul>
+    </div>
+    <div class="col-lg-3 col-md-6 mb-4">
+      <h5 class="mb-1" style="letter-spacing: 2px; color: #FFB703;">Come Visit</h5>
+      <table class="table" style="color: #4f4f4f; border-color: #666;">
+        <tbody>
+          <tr>
+            <td class="availibility">Mon - Fri:</td>
+            <td class="availibility">10am - 3pm</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="text-center p-3" style="background-color: #219EBC(0, 0, 0, 0.2);">
+    <p style="color: #FFB703;">© 2023 Copyright</p>
+  </div>
+</footer>
+
+</body>
+</html>
